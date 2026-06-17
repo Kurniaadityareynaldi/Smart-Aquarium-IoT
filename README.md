@@ -1,29 +1,101 @@
-**Smart Aquarium Prototype for Freshwater Ornamental Fish Using NodeMCU with IoT-Based Control
-**
+# 🐠 Smart Aquarium Prototype for Freshwater Ornamental Fish Using NodeMCU and IoT
 
-This GitHub repository showcases a final project from the Electrical Engineering Department, Universitas Gunadarma. The project focuses on the development of an IoT-based smart aquarium designed to simplify the maintenance and care of freshwater ornamental fish. By leveraging Internet of Things (IoT) technology, this smart aquarium automates water temperature control, lighting adjustments, and fish feeding.
+An IoT-based smart aquarium system designed to automate and simplify the maintenance of freshwater ornamental fish.
 
-Key features of the system include:
+This project was developed as a final undergraduate project in the Department of Electrical Engineering, Faculty of Industrial Technology, Universitas Gunadarma (2021).
 
-Temperature Monitoring and Control: The DS18B20 temperature sensor achieves an average error of 0.37 °C and a relative error of 1.46%, ensuring precise water temperature regulation.
+## 📖 Overview
 
-Lighting Management: The WS2812B LED lights adjust brightness and color based on user settings through the Blynk application, with an average delay of 1.61 seconds for turning off and 1.53 seconds for turning on the lights in automatic mode.
+Maintaining an aquarium requires regular monitoring of water conditions, lighting, and feeding schedules. This project integrates Internet of Things (IoT) technology to create an intelligent aquarium capable of:
 
-Automated Feeding: A servo motor dispenses an average of 5.56 grams of fish feed per operation, with a delay of approximately 1.56 seconds in automatic mode.
+* 🌡️ Monitoring and controlling water temperature
+* 💡 Managing aquarium lighting remotely
+* 🍽️ Automating fish feeding schedules
+* 📱 Providing remote monitoring and control via Blynk
 
-Heater Control: A relay-driven heater maintains optimal water temperature by activating and deactivating automatically.
+The system is built around the **NodeMCU (ESP8266)** platform and communicates with the cloud using IoT technology.
 
-This project demonstrates the integration of IoT, sensors, and actuators to create a functional and user-friendly smart aquarium system. The repository includes all relevant source code, schematics, and documentation to replicate or expand upon the prototype.
+---
 
-Keywords: IoT, DS18B20, Relay, Heater, WS2812B, Servo Motor, Smart Aquarium
+## ✨ Features
 
-Developed as part of the final project requirement for the Bachelor’s degree in Electrical Engineering, Faculty of Industrial Technology, Universitas Gunadarma, 2021.
+### 🌡️ Temperature Monitoring & Control
 
+* Uses the **DS18B20** waterproof temperature sensor.
+* Achieves an average measurement error of **0.37 °C**.
+* Relative error of only **1.46%**.
+* Automatically controls the heater to maintain optimal water temperature.
 
+### 💡 Smart Lighting System
 
-**NOTE: 
+* Uses **WS2812B RGB LED Strip**.
+* Adjustable brightness and color through the **Blynk** application.
+* Automatic lighting mode with:
 
-This Code Using Old Version of Blynk change it before uploading to your microcontroller
+  * Average ON delay: **1.53 s**
+  * Average OFF delay: **1.61 s**
 
-There are 4 main components of this project 220 V AC Heater, DS18B20 Temperature sensor, WS2812B LED Strip, and 180 degree Servo Motor
-**
+### 🍽️ Automatic Fish Feeder
+
+* Uses a **180° Servo Motor** to dispense fish feed.
+* Average feed dispensed: **5.56 g** per operation.
+* Automatic mode response delay: **1.56 s**.
+
+### 🔥 Heater Control
+
+* Relay-based heater switching.
+* Maintains stable water temperature automatically.
+
+---
+
+## 🛠 Hardware Components
+
+| Component          | Function                 |
+| ------------------ | ------------------------ |
+| NodeMCU (ESP8266)  | Main controller          |
+| DS18B20            | Water temperature sensor |
+| Relay Module       | Heater switching         |
+| 220 V AC Heater    | Water heating            |
+| WS2812B LED Strip  | Aquarium lighting        |
+| Servo Motor (180°) | Automatic feeding        |
+
+---
+
+## 📱 IoT Platform
+
+This project uses **Blynk** for remote monitoring and control.
+
+> ⚠️ **Important:**
+> This project was originally developed using an **older version of Blynk**. You may need to migrate the code to the latest Blynk platform before uploading it to your microcontroller.
+
+---
+
+## 📂 Repository Contents
+
+* Source code
+* Circuit schematics
+* Documentation
+* Experimental results
+
+Feel free to replicate, modify, and improve this project for educational or research purposes.
+
+---
+
+## 📊 Keywords
+
+`IoT` · `ESP8266` · `NodeMCU` · `DS18B20` · `WS2812B` · `Relay` · `Heater` · `Servo Motor` · `Blynk` · `Smart Aquarium`
+
+---
+
+## 🎓 Academic Information
+
+**Department of Electrical Engineering**
+Faculty of Industrial Technology
+Universitas Gunadarma
+Bachelor's Degree Final Project — 2021
+
+---
+
+## 📜 License
+
+This project is licensed under the terms specified in the LICENSE file.
