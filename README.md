@@ -96,6 +96,12 @@ Bachelor's Degree Final Project — 2021
 
 ---
 
+## Author
+
+**Kurnia Aditya Reynaldi**
+
+Electrical Engineer | Embedded Systems | Control Systems
+
 ## 📜 License
 
 This project is licensed under the terms specified in the LICENSE file.
